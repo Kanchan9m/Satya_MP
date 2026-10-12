@@ -6,6 +6,7 @@ import WhyChooseUs from '../components/WhyChooseUs'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import About from '../components/About'
+import MissionVision from '../components/MissionVision'
 
 function Home(){
 
@@ -15,6 +16,7 @@ function Home(){
         <main> 
             <Hero/>
             <About />
+            <MissionVision />
             {/* <h1> Satya Manpower</h1>
             <p>Connecting people with opportunities</p> */}
             <UserTypes/>

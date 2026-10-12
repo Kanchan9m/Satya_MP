@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
 
@@ -45,17 +44,41 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-slate-50 py-12">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-5 md:grid-cols-2 lg:px-8">
+    <section id="contact" className="bg-[#F3F7FD] py-12">
+      {/* <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-5 md:grid-cols-2 lg:px-8"> */}
 
         {/* Contact Information */}
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-wider text-orange-500">
-            Get in Touch
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Heading */}
+        <div className="mx-auto mb-9 max-w-3xl text-center">
+          <div className="mb-3 inline-flex items-center gap-3 text-xs font-extrabold uppercase tracking-[0.22em] text-orange-600 sm:text-sm">
+            <span className="h-px w-7 bg-orange-500" />
+            Contact Us
+            <span className="h-px w-7 bg-orange-500" />
+          </div>
+
+          <h2 className="text-lg font-extrabold leading-tight tracking-tight text-[#102B55] sm:text-4xl lg:text-[44px]">
+            Let's Build Your{" "}
+            <span className="text-orange-600">
+              Workforce Together
+            </span>
+          </h2>
+
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-slate-600 sm:text-base sm:leading-7">
+            Tell us what your business needs. Our team is here to
+            help you find the right manpower solutions for your
+            requirements.
+          </p>
+        </div>
+        {/* <div> */}
+        <div className="grid items gap-6 lg:grid-cols-2 lg:gap-7">
+          <div>
+          <p className="text-base font-bold uppercase tracking-wider text-orange-500">
+            We're Here to Help
           </p>
 
-          <h2 className="mt-2 text-3xl font-bold text-[#102B55]">
-            Let's Work Together
+          <h2 className="mt-2 max-w-md text-base font-bold text-[#102B55]">
+            Get in Touch with Our Team
           </h2>
 
           <p className="mt-3 max-w-md text-sm leading-6 text-gray-600">
@@ -83,97 +106,18 @@ const Contact = () => {
             ))}
           </div>
         </div>
+        <div className="min-w-0 overflow-hidden rounded-xl border border-slate-200">
 
-        {/* Contact Form */}
-        <form
-          onSubmit={handleSubmit}
-          className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm sm:p-7"
-        >
-          <h3 className="mb-5 text-xl font-bold text-[#102B55]">
-            Send Us a Message
-          </h3>
+        
+        <iframe aria-label='Send us a Message'
+          height="600"
+          width="100%"
+          style={{ border: "none" }}
+         src='https://forms.zohopublic.in/skvkanchan2003gm1/form/ContactUs/formperma/q9ze_QmTTnkLzzKDqakZ_T8N_COv93vkrkGBydvzYGE' >
+        </iframe>
+        </div>
 
-          <div className="space-y-4">
-            <div>
-              <label htmlFor="contact-name" className="mb-1.5 block text-sm font-medium text-gray-700">
-                Full Name
-              </label>
-
-              <input
-                id="contact-name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                placeholder="Enter your name"
-                autoComplete="name"
-                required
-                className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
-              />
-            </div>
-
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <div>
-                <label htmlFor="contact-email" className="mb-1.5 block text-sm font-medium text-gray-700">
-                  Email Address
-                </label>
-
-                <input
-                  id="contact-email"
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="you@example.com"
-                  autoComplete="email"
-                  required
-                  className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="contact-phone" className="mb-1.5 block text-sm font-medium text-gray-700">
-                  Phone Number
-                </label>
-
-                <input
-                  id="contact-phone"
-                  name="phone"
-                  type="tel"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="Enter phone number"
-                  autoComplete="tel"
-                  className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
-                />
-              </div>
-            </div>
-
-            <div>
-              <label htmlFor="contact-message" className="mb-1.5 block text-sm font-medium text-gray-700">
-                Your Message
-              </label>
-
-              <textarea
-                id="contact-message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                placeholder="Tell us about your requirements..."
-                rows={4}
-                required
-                className="w-full resize-y rounded-lg border border-gray-300 px-4 py-3 text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="w-full rounded-lg bg-orange-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-orange-600"
-            >
-              Send Message
-            </button>
-          </div>
-        </form>
-
+      </div>
       </div>
     </section>
   );

@@ -6,7 +6,8 @@ const About = () => {
   return (
     <section
       id="about"
-      className="scroll-mt-24 bg-[#F8F9FB] py-14 md:py-20"
+      className="scroll-mt-24 bg-[#F3F7FD] py-14 md:py-20"
+      // relative overflow-hidden bg-[#F3F7FD] py-16 sm:py-20 lg:py-24
     >
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-5 sm:px-8 lg:grid-cols-2 lg:gap-16 lg:px-10">
 
@@ -24,15 +25,15 @@ const About = () => {
 
         {/* Right: About Content */}
         <div>
-          <p className="text-sm font-semibold tracking-[0.25em] text-gray-400">
+          <p className="text-sm font-extrabold tracking-[0.25em] text-gray-400">
             ABOUT US
           </p>
 
-          <h2 className="mt-4 text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-[46px]">
+          <h2 className="mt-4 text-lg font-extrabold leading-tight text-gray-900 sm:text-4xl lg:text-[46px]">
             Built on Trust,
             <br />
             {/* <span className="text-[#164A96]"> */}
-            <span className="text-orange-500">
+            <span className="text-orange-500 font-bold">
               Driven by People
             </span>
           </h2>

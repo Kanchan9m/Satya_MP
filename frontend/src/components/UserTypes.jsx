@@ -6,7 +6,8 @@ import { Users, UserRoundSearch, ArrowRight } from "lucide-react";
 
 const UserTypes = () => {
   return (
-    <section className="bg-alice-blue py-6">
+    <section className="bg-[#F3F7FD] py-16">
+    
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-5 px-20 md:grid-cols-2 lg:px-8">
 
         {/* For Businesses */}
