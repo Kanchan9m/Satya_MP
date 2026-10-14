@@ -13,7 +13,7 @@ const Hero = () => {
         className="absolute inset-0 h-full w-full object-cover object-center"
       />
 
-      <div className="absolute inset-0 bg-gradient-to-r from-white from-0% via-white/80 via-35% via-white/70 via-50% to-transparent to-70%"/>
+      <div className="absolute inset-0 bg-gradient-to-r from-[#E0E4E6] from-0% via-[#E0E4E6]/80 via-35% via-[#E0E4E6]/70 via-50% to-transparent to-70%"/>
 
       <div className="relative z-10 mx-auto max-w-7xl px-5 lg:px-8">
         <div className="flex min-h-[520px] items-center">

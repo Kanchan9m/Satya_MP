@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
+import logo from "../assets/logo.png";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -14,18 +15,28 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white shadow-sm">
+    <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-[#E0E4E6] shadow-sm">
       <nav className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
         <div className="flex min-h-[88px] w-full items-center justify-between gap-6">
 
-          <a href="#home" className="shrink-0 text-left no-underline" onClick={() => setMenuOpen(false)}
-          >
-            <span className="block text-3xl font-extrabold leading-tight tracking-tight text-[#102B55]">
-              SATYA<span className="text-orange-500">.</span>
-            </span>
-            <span className="mt-0.5 block text-xs font-medium tracking-wide text-gray-500">
-              Manpower Services
-            </span>
+          <a href="#home"
+              className="flex shrink-0 items-center gap-3"
+              aria-label="Satya Manpower Services home"
+            >
+              <img
+                src={logo}
+                alt="Satya Manpower logo"
+                className="h-13 w-13 shrink-0 object-contain"
+              />
+            <div className="flex flex-col justify-center">
+              <span className="text-4xl font-extrabold leading-none tracking-wide text-[#565D63] sm:text-3xl">
+                SMS
+              </span>
+
+              <span className="mt-2 whitespace-nowrap text-sm font-medium leading-tight text-[#565D63] sm:text-base">
+                Satya Manpower Services
+              </span>
+            </div>
           </a>
 
           <div className="hidden items-center gap-6 lg:flex xl:gap-8">
