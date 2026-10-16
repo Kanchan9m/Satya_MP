@@ -8,12 +8,12 @@ const UserTypes = () => {
   return (
     <section className="bg-[#F3F7FD] py-16">
     
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-5 px-20 md:grid-cols-2 lg:px-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 px-20 md:grid-cols-2 lg:px-8">
 
         {/* For Businesses */}
         <div
           id="employers"
-          className="relative h-[230px] overflow-hidden rounded-xl border border-gray-200 shadow-sm"
+          className="relative h-[300px] overflow-hidden rounded-xl border border-gray-200 shadow-sm"
         >
           <img
             src={employerImage}
@@ -54,7 +54,7 @@ const UserTypes = () => {
 
         <div
           id="jobs"
-          className="relative h-[230px] overflow-hidden rounded-xl border border-gray-200 shadow-sm"
+          className="relative h-[300px] overflow-hidden rounded-xl border border-gray-200 shadow-sm"
         >
           <img
             src={jobSeekerImage}
